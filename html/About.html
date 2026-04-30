@@ -5,17 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/About.css">
 
 </head>
 <body>
-    <nav>
-        <div class="logo">AB</div>
-        <div class="menu">
-            <a href="../index.html">Home</a>
-            <a href="../html/About.html">About</a>
-            <a href="../html/Contact.html">Contact</a>
-            <a href="../html/Service.html">Service</a>
+    <div class = "form">
+
+        <div class = "form_menu">
+            <label for="user-name">User Name</label>
+            <input id = "user-name" type="text" placeholder="Enter your name">
         </div>
-    </nav>
+
+        <div class = "form_menu">
+            <label for="email">Email</label>
+            <input id = "email" type="email" placeholder="Enter your email">
+        </div>
+        
+        <div class = "form_menu">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+        </div>
+
+        <div class = "form_menu">
+            <label for="image">file</label>
+            <input id = "image" type="file">
+        </div>
+
+        <div class = "form_menu">
+            <label for="submit">submit</label>
+            <button id = "submit">Submit</button>
+        </div>
+    </div>
 </body>
 </html>

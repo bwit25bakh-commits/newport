@@ -1,0 +1,27 @@
+.form {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #caacac;
+}
+
+.form_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.form_menu label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #b94040;
+}
+
+.form_menu input{
+    height:40px;
+    padding: 0px 6px;
+    border-radius: 10px;
+}
