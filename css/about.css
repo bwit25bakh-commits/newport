@@ -1,27 +1,108 @@
-.form {
-    width: 50%;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #caacac;
+body {
+    background-color: #e9b9b9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 110px;
+    font-family: Arial, sans-serif;
 }
 
-.form_menu{
+.form {
+    width: 400px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(177, 66, 66, 0.2); 
+    box-shadow: 0 4px 30px rgba(191, 43, 43, 0.829); 
+    backdrop-filter: blur(10px);
+    
 }
 
-.form_menu label{
+.form_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+}
+
+.form_menu label {
     font-size: 18px;
     font-weight: 600;
     color: #b94040;
 }
 
-.form_menu input{
-    height:40px;
-    padding: 0px 6px;
+.form_menu input {
+    height: 40px;
+    padding: 0 8px;
     border-radius: 10px;
+    border: 1px solid #b94040;
+    transition: 0.3s ease;
+}
+
+.form_menu input::placeholder {
+    text-transform: capitalize;
+}
+
+.form_menu input:focus {
+    outline: none;
+    border-color: #ff6b6b;
+    box-shadow: 0 0 6px rgba(185, 64, 64, 0.5);
+}
+
+.form_check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form_check label {
+    font-size: 12px;
+}
+
+.form_button {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+}
+
+.animation_button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(168, 127, 120);
+}
+
+.form_button button {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 520;
+    font-family: sans-serif; 
+}
+
+.form_button:hover .animation_button {
+    animation: buttonanimation 2s infinite;
+}
+
+@keyframes buttonanimation {
+    0%   { background-color: red; }
+    25%  { background-color: yellow; }
+    50%  { background-color: lime; }
+    75%  { background-color: cyan; }
+    100% { background-color: magenta; }
 }

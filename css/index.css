@@ -152,20 +152,6 @@ nav {
         transform: translateY(0);
     }
 }
-
-ol {
-    color: #b94040;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 20px;
-}
-ul {
-    color: #b94040;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
 /* Responsive Design */
 @media(max-width:768px){
     .navbar{
