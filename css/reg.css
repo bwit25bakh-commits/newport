@@ -23,20 +23,13 @@ body {
     background: #f5f5f5;
 }
 
-.left h2 {
-    margin-bottom: 20px;
-    color: #3a5ea8;
-}
+
 
 .right {
     flex: 1;
     padding: 40px;
-    background: linear-gradient(to bottom right, #4b3ac7, #5e4fd8);
+    background: linear-gradient(to bottom right, #4b3ac7, #9087d1);
     color: white;
-}
-
-.right h2 {
-    margin-bottom: 20px;
 }
 
 input {
@@ -67,8 +60,21 @@ input {
     flex: 1;
 }
 
-.terms{
-    
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.terms input {
+    width: auto;
+    margin: 0;
+}
+
+.terms label {
+    margin: 0;
+    font-size: 14px;
 }
 
 button {
